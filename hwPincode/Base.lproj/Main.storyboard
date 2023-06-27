@@ -21,6 +21,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите пин код" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mH0-F9-VF4">
                                         <rect key="frame" x="8" y="8" width="377" height="286"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -53,27 +54,40 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="lMd-GB-k28" userLabel="ButtonStackView">
                                         <rect key="frame" x="8" y="389" width="377" height="75"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGR-99-R0H">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGR-99-R0H">
                                                 <rect key="frame" x="8" y="8" width="103.66666666666667" height="59"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="1">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                                     <color key="baseBackgroundColor" systemColor="separatorColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x6o-66-I3f"/>
+                                                    <action selector="onTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJB-lR-W9r"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faJ-py-V8p">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faJ-py-V8p">
                                                 <rect key="frame" x="136.66666666666666" y="8" width="103.66666666666666" height="59"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="2">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                                     <color key="baseBackgroundColor" systemColor="separatorColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JhS-hv-8Hi"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QZ-O3-ems">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QZ-O3-ems">
                                                 <rect key="frame" x="265.33333333333331" y="8" width="103.66666666666669" height="59"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="3">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                                     <color key="baseBackgroundColor" systemColor="separatorColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z4b-io-HGe"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -88,6 +102,7 @@
                                                 <rect key="frame" x="8" y="8" width="103.66666666666667" height="59"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="4">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                                     <color key="baseBackgroundColor" systemColor="separatorColor"/>
                                                 </buttonConfiguration>
                                             </button>
@@ -95,6 +110,7 @@
                                                 <rect key="frame" x="136.66666666666666" y="8" width="103.66666666666666" height="59"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="5">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                                     <color key="baseBackgroundColor" systemColor="separatorColor"/>
                                                 </buttonConfiguration>
                                             </button>
@@ -102,6 +118,7 @@
                                                 <rect key="frame" x="265.33333333333331" y="8" width="103.66666666666669" height="59"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="6">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                                     <color key="baseBackgroundColor" systemColor="separatorColor"/>
                                                 </buttonConfiguration>
                                             </button>
@@ -118,6 +135,7 @@
                                                 <rect key="frame" x="8" y="8" width="103.66666666666667" height="59"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="7">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                                     <color key="baseBackgroundColor" systemColor="separatorColor"/>
                                                 </buttonConfiguration>
                                             </button>
@@ -125,6 +143,7 @@
                                                 <rect key="frame" x="136.66666666666666" y="8" width="103.66666666666666" height="59"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="8">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                                     <color key="baseBackgroundColor" systemColor="separatorColor"/>
                                                 </buttonConfiguration>
                                             </button>
@@ -132,6 +151,7 @@
                                                 <rect key="frame" x="265.33333333333331" y="8" width="103.66666666666669" height="59"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="9">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                                     <color key="baseBackgroundColor" systemColor="separatorColor"/>
                                                 </buttonConfiguration>
                                             </button>
@@ -148,6 +168,7 @@
                                                 <rect key="frame" x="8" y="8" width="103.66666666666667" height="59"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" image="faceid" catalog="system" title="FaceID">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                                     <color key="baseBackgroundColor" systemColor="separatorColor"/>
                                                 </buttonConfiguration>
                                             </button>
@@ -155,6 +176,7 @@
                                                 <rect key="frame" x="136.66666666666666" y="8" width="103.66666666666666" height="59"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="0">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                                     <color key="baseBackgroundColor" systemColor="separatorColor"/>
                                                 </buttonConfiguration>
                                             </button>
@@ -162,6 +184,7 @@
                                                 <rect key="frame" x="265.33333333333331" y="8" width="103.66666666666669" height="59"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" image="arrowshape.backward.fill" catalog="system" title="Delete">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                                     <color key="baseBackgroundColor" systemColor="separatorColor"/>
                                                 </buttonConfiguration>
                                             </button>
@@ -184,6 +207,23 @@
                             <constraint firstItem="FNl-Tg-o4W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kgZ-Fn-dIL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button0" destination="cZX-Lz-U3t" id="n1H-1L-cCW"/>
+                        <outlet property="button1" destination="pGR-99-R0H" id="qlN-Lo-579"/>
+                        <outlet property="button2" destination="faJ-py-V8p" id="4w0-pX-Kvh"/>
+                        <outlet property="button3" destination="0QZ-O3-ems" id="qol-tR-IxU"/>
+                        <outlet property="button4" destination="JwR-ap-adH" id="o2N-JG-If3"/>
+                        <outlet property="button5" destination="moJ-Oi-5jB" id="ekL-j7-ylv"/>
+                        <outlet property="button6" destination="ABN-5c-YeU" id="3e4-vE-gWC"/>
+                        <outlet property="button7" destination="sr7-bh-Yez" id="TEL-2N-quK"/>
+                        <outlet property="button8" destination="JZb-2g-ER2" id="vtD-YW-UkY"/>
+                        <outlet property="button9" destination="7Jd-1I-O3G" id="fr0-l3-QlB"/>
+                        <outlet property="buttonDelete" destination="n93-pE-4Wi" id="o6x-MD-Bjq"/>
+                        <outlet property="circle1" destination="sbW-mf-RJX" id="jIj-CM-b4q"/>
+                        <outlet property="circle2" destination="ElN-FA-otX" id="EeQ-vd-Xbj"/>
+                        <outlet property="circle3" destination="Pvj-s5-Du1" id="TWZ-2b-NCg"/>
+                        <outlet property="circle4" destination="7Gf-U8-2YI" id="VY4-V9-9Oh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
